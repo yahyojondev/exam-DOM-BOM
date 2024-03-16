@@ -408,5 +408,95 @@ main{
        }
     }
 }
+.cards{
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 19px;
+        row-gap: 25px;
+        &__card{
+            border-radius: 5px;
+            box-shadow: 0px 0px  2px 2px gray;
+            width: 100%;
+                max-width: 288px;
+                background-color: rgb(255, 255, 255);
+            img{
+                opacity: 1;
+                width: 100%;
+                height: 320px;
+                border-radius: 5px 5px 0px 0px ;
+                transition: 0.5s;
+                
+               
+            }
+            img:hover{
+                opacity: 1;
+                transform: scalex(0.5);
+            }
+        }
+    }
+    .card__content{
+        height: 133px;
+        border-radius: 2px;
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .products__title{
+        display: flex;
+        font-size: 17px;
+        font-family: sans-serif;
+    }
+    .products__text{
+        overflow-x: hidden;
+        color: rgb(69, 79, 91);
+            font-family:sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: left;
+    }
+    .products__rating{
+        width: 100%;
+        max-width: 100px;
+        height: 16px;
+    }
+    .products__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .products__stock{
+        color: rgb(69, 79, 91);
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+    }
+    .products__price{
+        color: rgb(22, 28, 36);
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+    }
+}
+.loading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    z-index: 999999999;
+}
 
 // footer end
