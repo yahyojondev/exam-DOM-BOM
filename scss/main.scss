@@ -409,6 +409,7 @@ main{
     }
 }
 .cards{
+    padding: 60px;
     &__wrapper{
         width: 100%;
         display: flex;
@@ -442,6 +443,7 @@ main{
         padding: 10px 12px;
         display: flex;
         flex-direction: column;
+        background-color: rgb(255, 255, 255);
         gap: 5px;
         
     }
@@ -451,7 +453,7 @@ main{
         font-family: sans-serif;
     }
     .products__text{
-        overflow-x: hidden;
+        overflow: clip;
         color: rgb(69, 79, 91);
             font-family:sans-serif;
             font-size: 16px;

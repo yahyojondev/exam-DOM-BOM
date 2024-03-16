@@ -566,6 +566,9 @@ main {
   text-align: left;
 }
 
+.cards {
+  padding: 60px;
+}
 .cards__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -610,6 +613,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgb(255, 255, 255);
   gap: 5px;
 }
 .cards .products__title {
@@ -620,7 +624,7 @@ main {
   font-family: sans-serif;
 }
 .cards .products__text {
-  overflow-x: hidden;
+  overflow: clip;
   color: rgb(69, 79, 91);
   font-family: sans-serif;
   font-size: 16px;
