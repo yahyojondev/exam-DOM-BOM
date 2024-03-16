@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+.wrapper{
+    padding: 100px 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    &__card__product{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__title{
+            color: rgb(22, 28, 36);
+                font-family: sans-serif ;
+                font-size: 44px;
+                font-weight: 600;
+                line-height: 62px;
+                letter-spacing: 0%;
+                text-align: left;
+        }
+        &__description,&__brand,&__category,&__price,&__btn{
+            width: 100%;
+            max-width: 400px;
+color: rgb(22, 28, 36);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+        }
+        &__price p{
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0%;
+   
+        }
+        &__wrapper{
+            .product__price{
+            color: rgb(22, 28, 36);
+                font-family: SF Pro Text;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__btn{
+            color: rgb(255, 255, 255);
+                border: none;
+                border-radius: 5px;
+                width: 220px;
+                height: 50px;
+                    background: rgb(66, 149, 228);
+        }
+       
+}
+ .product__images {
+    width: 100%;
+     border-radius: 5px;
+     box-shadow: 0px 0px 2px 2px gray;
+     max-width: 400px;
+     height: 440px;
+     background-color: red;
+     transition: 1s;
+ }
+
+ .product__images:hover {
+     transform: scalex(0.4);
+     box-shadow: 0px 0px 5px 5px;
+ }
+
+}
+

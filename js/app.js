@@ -34,7 +34,13 @@ function createCard(data){
         <p class="products__text">${products.description}</p>
                      <p class="products__price">${products.price}₽</p>  
         `
+        card.addEventListener("click",()=> singleRoute(products.id,products.brand))
         cardwrapper.appendChild(card)
         card.appendChild(cardContent)
     })
+}
+
+function singleRoute(id,brand){
+    
+    window.open(`/pages/product.html?id=${id}&name=${brand}`,"_self")
 }

@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 100px 0px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
+}
+.wrapper__card__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.wrapper__card__product__title {
+  color: rgb(22, 28, 36);
+  font-family: sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.wrapper__card__product__description, .wrapper__card__product__brand, .wrapper__card__product__category, .wrapper__card__product__price, .wrapper__card__product__btn {
+  width: 100%;
+  max-width: 400px;
+  color: rgb(22, 28, 36);
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.wrapper__card__product__price p {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.wrapper__card__product__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.wrapper__card__product__wrapper .product__price {
+  color: rgb(22, 28, 36);
+  font-family: SF Pro Text;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.wrapper__card__product__btn {
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  width: 220px;
+  height: 50px;
+  background: rgb(66, 149, 228);
+}
+.wrapper .product__images {
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px gray;
+          box-shadow: 0px 0px 2px 2px gray;
+  max-width: 400px;
+  height: 440px;
+  background-color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.wrapper .product__images:hover {
+  -webkit-transform: scalex(0.4);
+          transform: scalex(0.4);
+  -webkit-box-shadow: 0px 0px 5px 5px;
+          box-shadow: 0px 0px 5px 5px;
+}
