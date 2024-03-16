@@ -498,10 +498,18 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 50px;
+}
+@media only screen and (min-width: 600px) {
+  .footer__wrapper__right__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 100px;
+  }
 }
 .footer__wrapper__right__list__item {
   display: -webkit-box;
